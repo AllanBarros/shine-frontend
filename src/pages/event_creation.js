@@ -44,7 +44,7 @@ function EventCreation() {
 
     useEffect(() => {
        const get_tags = () => {
-            get_from_backend("http://localhost:8000/v1/tags/listar", format_options_list)
+            get_from_backend("https://shine-backend.azurewebsites.net/v1/tags/listar", format_options_list)
         }
         get_tags();
       },[]);
