@@ -30,7 +30,6 @@ export default function Header(page) {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          {auth ?
             <IconButton
               size="large"
               edge="start"
@@ -41,13 +40,9 @@ export default function Header(page) {
             >
               <MenuIcon />
             </IconButton>
-            :
-            null
-          }
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Shine
           </Typography>
-          {auth ?
             <div>
               <IconButton
                 size="large"
@@ -76,9 +71,6 @@ export default function Header(page) {
                 <MenuItem onClick={handleClose}>Logout</MenuItem>
               </Menu>
             </div>
-            :
-            null
-          }
         </Toolbar>
       </AppBar>
       <SideMenu state={menuOpen} setState={() => { setMenuOpen() }} />
