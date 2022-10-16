@@ -11,14 +11,8 @@ import Menu from '@mui/material/Menu';
 import SideMenu from './menu';
 
 export default function Header(page) {
-  const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [menuOpen, setMenuOpen] = React.useState(false);
-
-  //   const handleChange = (event) => {
-  //     setAuth(event.target.checked);
-  //   };
-
 
   const handleMenuDrawer = (event) => {
     setMenuOpen(!menuOpen)
