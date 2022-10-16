@@ -11,15 +11,15 @@ export default function EventCard({evento}) {
     <Card style={{ minWidth: "100%" }}>
       <CardContent>
         <Typography variant="h4" color="text.primary" gutterBottom>
-          {evento["nome"]}
+          {evento["event_name"]}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          Local: {evento["estado"]} - {evento["cidade"]}
+          Local: {evento["event_state"]} - {evento["event_city"]}
         </Typography>
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          Data: {evento["data"]}
+          Data: {evento["event_date"]}
         </Typography>
-        <EventChips classificacoes={evento["classificacoes"]}/>
+        <EventChips classificacoes={evento["event_tags"]}/>
       </CardContent>
       <CardActions>
         <Button size="small">Saiba mais</Button>

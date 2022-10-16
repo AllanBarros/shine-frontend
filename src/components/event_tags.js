@@ -7,7 +7,7 @@ export default function EventChips({ classificacoes }) {
         <Stack direction="row" spacing={1}>
             {classificacoes.map((tag_label) => {
                 return (
-                    <Chip label={tag_label} />
+                    <Chip label={tag_label["classification_name"]} />
                 )
             })
             }

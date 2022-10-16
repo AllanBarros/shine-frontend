@@ -25,7 +25,7 @@ function EventCreation() {
     const handleSaveEvent = () => {
         let new_event = eventForm
         new_event["event_tags"] = tags
-        post_to_backend("http://localhost:8000/v1/eventos/criar", new_event, handleClear)
+        post_to_backend("https://shine-backend.azurewebsites.net/v1/eventos/criar", new_event, handleClear)
 
     }
 
